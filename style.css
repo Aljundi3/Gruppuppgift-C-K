@@ -11,7 +11,7 @@ h1 {
     font-size: 60px;
 
 }
-th{
+th {
     text-align: left;
     font-size: 40px;
 
@@ -21,4 +21,17 @@ img {
     border-radius: 40px;
     width: auto;
     height: 400px;
+}
+
+
+input { [type=email], input[type=number], input[type=tel], input[type=text], textarea    display: block;
+    margin: 5px auto 15px;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #bfbfbf;
+    vertical-align: top;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 15px;
+
 }
