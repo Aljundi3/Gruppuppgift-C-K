@@ -1,0 +1,19 @@
+html 
+h1 {
+    text-align: left;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 60px;
+
+}
+th{
+    text-align: left;
+    font-size: 40px;
+
+}
+    
+img {
+    border-radius: 115px;
+    width: auto;
+    height: 400px;
+}
