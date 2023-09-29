@@ -1,7 +1,6 @@
 html {
 
     font-family: 'League Spartan', sans-serif;
-    text-align: center;
 
 } 
 
@@ -35,4 +34,16 @@ input {
     height: 46px;
     line-height: 46px;
     padding: 0 15px;
+}
+
+.section-form {
+    text-align: center;
+    padding: 0 10%;
+}
+
+.section-form label {
+    text-align: left;
+    display: block;
+    margin: 5px auto 15px;
+    padding-left: 15%;
 }
