@@ -1,6 +1,7 @@
 html {
 
     font-family: 'League Spartan', sans-serif;
+    text-align: center;
 
 } 
 
@@ -24,15 +25,14 @@ img {
 }
 
 
-
-input { [type=email], input[type=number], input[type=tel], input[type=text], textarea    display: block;
+input {
+    display: block;
     margin: 5px auto 15px;
     width: 100%;
-    max-width: 100%;
+    max-width: 70%;
     border: 1px solid #bfbfbf;
     vertical-align: top;
     height: 46px;
     line-height: 46px;
     padding: 0 15px;
-
 }
