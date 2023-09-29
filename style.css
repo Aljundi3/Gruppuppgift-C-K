@@ -1,4 +1,9 @@
-html 
+html {
+
+    font-family: 'League Spartan', sans-serif;
+
+} 
+
 h1 {
     text-align: left;
     font-weight: bold;
