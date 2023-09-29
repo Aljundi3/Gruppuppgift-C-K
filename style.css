@@ -24,6 +24,7 @@ img {
 }
 
 
+
 input { [type=email], input[type=number], input[type=tel], input[type=text], textarea    display: block;
     margin: 5px auto 15px;
     width: 100%;
