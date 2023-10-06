@@ -1,0 +1,28 @@
+<html>
+
+<head>    
+    <meta charset="UTF-8">
+    <script>
+        // Lägg till en knapp som ändrar bakgrundsfärgen på sidan.
+        // skapa en funktion som ändrar bakgrundsfärg
+        function clickFunction(){
+            let ourDiv = document.querySelector("#color-changer"); 
+            ourDiv.style.backgroundColor ="green";
+        }
+// kalla efter funktionen 
+console.log(clickFunction);
+</script>
+<style>    
+body {
+  background-color: lightblue;
+}
+</style>
+
+
+</head>
+<body>
+        <button onclick="clickFunction()">Klicka här</button>
+        <div id="color-changer"></div>
+</body>
+
+</html>

@@ -7,11 +7,25 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap" rel="stylesheet">
-<script src="main.js"></script>
-<style>
+<script>// Lägg till en knapp som ändrar bakgrundsfärgen på sidan.
 
-    background-color:powderblue;
-
+    // Skapa en funktion som gör följande sak: ändrar bakgrundsfärg.
+    function clickFunction(){
+        // Hämta vår div via dens ID och sparar den i en variabel. 
+        let ourDiv = document.querySelector("#color-changer");
+    
+        // Ändra bakgrundsfärgen på vår div till grön, style är ett sätt att göra CSS-förändringar. I JS får man inte använda bindestreck i funktioner. 
+        ourDiv.style.backgroundColor = "green";
+        //OBs, måste vara en 
+        // Ändra texten på ourText till "Jag har ändrats!". 
+        ourText.innerText = "Jag har ändrats!";
+        // let ourTextValue = ourText.innerText. Likamed är att den hämtar något. 
+    }
+    // Koppla denna funktion till onclick. Måste först skriva onclick i bodyn, kolla nedan.</script>
+<style>     
+body {
+  background-color: lightblue;
+}
 </style>
 </head>
 
