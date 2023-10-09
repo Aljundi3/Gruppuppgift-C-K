@@ -1,39 +1,36 @@
 <html>
-
-<head>    
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <script>
-        // Lägg till en knapp som ändrar bakgrundsfärgen på sidan.
-        // skapa en funktion som ändrar bakgrundsfärg
-        function clickFunction(){
-            let ourDiv = document.querySelector("#color-changer"); 
-            ourDiv.style.backgroundColor ="lightgreen";
-        }
-// kalla efter funktionen 
-console.log(clickFunction);
-</script>
-<style> 
-body, html {
-    margin: 0;
-    padding: 0;
-}
+      // Lägg till en knapp som ändrar bakgrundsfärgen på sidan.
+      // skapa en funktion som ändrar bakgrundsfärg
+      function clickFunction() {
+        let ourDiv = document.querySelector("#color-changer");
+        ourDiv.style.backgroundColor = "lightgreen";
+      }
+      // kalla efter funktionen
+      console.log(clickFunction);
+    </script>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+      }
 
-div {
-    width: 100vw; /* 100% av fönstrets bredd */
-    height: 100vh; /* 100% av fönstrets höjd */
-    background-color: lightblue;
-}
+      div {
+        width: 100vw; /* 100% av fönstrets bredd */
+        height: 100vh; /* 100% av fönstrets höjd */
+        background-color: lightblue;
+      }
 
-button {
-    margin-top: 20px; /* Lägger till lite avstånd överst på knappen för tydlighet */
-}
-</style>
-
-
-</head>
-<body>
-        <button onclick="clickFunction()">Klicka här</button>
-        <div id="color-changer"></div>
-</body>
-
+      button {
+        margin-top: 20px; /* Lägger till lite avstånd överst på knappen för tydlighet */
+      }
+    </style>
+  </head>
+  <body>
+    <button onclick="clickFunction()">Klicka här</button>
+    <div id="color-changer"></div>
+  </body>
 </html>
