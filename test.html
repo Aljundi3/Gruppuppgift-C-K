@@ -1,47 +1,35 @@
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <script>
-      // Lägg till en knapp som ändrar bakgrundsfärgen på sidan.
-      // skapa en funktion som ändrar bakgrundsfärg
-      function clickFunction() {
-        let ourDiv = document.querySelector("#color-changer");
-        ourDiv.style.backgroundColor = "lightgreen";
-      }
-      // kalla efter funktionen
-      console.log(clickFunction);
+<!DOCTYPE html>
+<html lang="en">
 
-
-      // Lägg till en enkel klocka som visar aktuell tid med hjälp av JavaScript. 
-      // Ta hjälp av Date-objektet i Javascript.
-
-      
-    </script>
+<head>
+    <meta charset="UTF-8">
+    <title>Din Sida</title>
     <style>
-      body,
-      html {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-      }
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
-      div {
-        width: 100%; /* 100% av fönstrets bredd */
-        height: 50%; /* 100% av fönstrets höjd */
-        background-color: rgb(151, 33, 59);
-      }
+        #clock {
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
 
-      button {
-        margin-top: 20px; /* Lägger till lite avstånd överst på knappen för tydlighet */
-      }
+        #content {
+            flex: 1;
+            background-color: lightblue;
+        }
+
+        button {
+            margin-top: 20px;
+            align-self: center;
+        }
     </style>
-  </head>
-  <body>
-    <button onclick="clickFunction()">Klicka här</button>
-    <div id="color-changer"></div>
-    <div id="clock"></div>
-
-
     <script>
         // Lägg till en knapp som ändrar bakgrundsfärgen på sidan.
         function clickFunction() {
@@ -68,7 +56,15 @@
             // Uppdatera klockan varje sekund
             setInterval(updateClock, 1000);
         });
-        </script>
+    </script>
+</head>
 
-  </body>
+<body>
+    <div id="clock"></div>
+    <div id="content">
+        <button onclick="clickFunction()">Klicka här</button>
+        <div id="color-changer"></div>
+    </div>
+</body>
+
 </html>
