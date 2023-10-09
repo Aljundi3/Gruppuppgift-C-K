@@ -10,18 +10,25 @@
       }
       // kalla efter funktionen
       console.log(clickFunction);
+
+
+      // Lägg till en enkel klocka som visar aktuell tid med hjälp av JavaScript. 
+      // Ta hjälp av Date-objektet i Javascript.
+
+      
     </script>
     <style>
       body,
       html {
         margin: 0;
         padding: 0;
+        height: 100%;
       }
 
       div {
-        width: 100vw; /* 100% av fönstrets bredd */
-        height: 100vh; /* 100% av fönstrets höjd */
-        background-color: lightblue;
+        width: 100%; /* 100% av fönstrets bredd */
+        height: 100%; /* 100% av fönstrets höjd */
+        background-color: rgb(151, 33, 59);
       }
 
       button {
@@ -32,5 +39,36 @@
   <body>
     <button onclick="clickFunction()">Klicka här</button>
     <div id="color-changer"></div>
+    <div id="clock"></div>
+
+
+    <script>
+        // Lägg till en knapp som ändrar bakgrundsfärgen på sidan.
+        function clickFunction() {
+            let ourDiv = document.querySelector("#color-changer");
+            ourDiv.style.backgroundColor = "lightgreen";
+        }
+
+        // Funktion för att uppdatera klockan
+        function updateClock() {
+            const clockElement = document.getElementById("clock");
+            const currentTime = new Date();
+            const hours = currentTime.getHours().toString().padStart(2, "0");
+            const minutes = currentTime.getMinutes().toString().padStart(2, "0");
+            const seconds = currentTime.getSeconds().toString().padStart(2, "0");
+            const timeString = `${hours}:${minutes}:${seconds}`;
+            clockElement.textContent = timeString;
+        }
+
+        // Vänta tills DOM är helt laddad
+        document.addEventListener("DOMContentLoaded", function () {
+            // Uppdatera klockan första gången
+            updateClock();
+
+            // Uppdatera klockan varje sekund
+            setInterval(updateClock, 1000);
+        });
+        </script>
+
   </body>
 </html>
